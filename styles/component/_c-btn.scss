@@ -1,0 +1,76 @@
+.c-btn {
+    > a,input[type="submit"] {
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+        letter-spacing: .06em;
+        display: inline-block;
+        padding: 20px 100px;
+        background-color: #fff;
+        border: 1px solid $accent-color;
+        font-weight: bold;
+        @include font-size(18);
+        color: $accent-color;
+        transition: all .3s;
+        z-index: $z-index-order-7;
+        @include mq(tab) {
+            padding: 20px 70px;
+        }
+        @include mq(sp) {
+            padding: 15px 50px;
+            @include font-size(16);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transform: translateX(-100%);
+            background-color: $accent-color;
+            transition: all .6s;
+            z-index: $z-index-order-10;
+        }
+        &:hover {
+            color: #fff;
+            &::after {
+                transform: translateX(0);
+            }
+        }
+    }
+}
+.c-btn--bg {
+    @extend .c-btn;
+    > a {
+        border: 2px solid $accent-color;
+        text-align: center;
+        padding: 20px 0;
+        width: 100%;
+        font-weight: bold;
+        @include font-size(30);
+        @include mq(sp) {
+            border: 2px solid $accent-color;
+            @include font-size(18);
+        }
+        &::after {
+            content: none;
+        }
+        &:hover {
+            background-color: $accent-color;
+            color: #fff;
+        }
+    }
+}
+.c-btn--submit {
+    @extend .c-btn;
+    > input[type="submit"] {
+        &::after {
+            content: none;
+        }
+        &:hover {
+            background-color: $accent-color;
+            color: #fff;
+        }
+    }
+}

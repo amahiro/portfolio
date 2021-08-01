@@ -1,0 +1,6 @@
+.is-fadein {
+    opacity: 0;
+    &--open {
+        animation: fadein .6s ease forwards;
+    }
+}

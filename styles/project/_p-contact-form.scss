@@ -1,0 +1,83 @@
+.p-contact-form {
+    padding: 150px 0;
+    text-align: center;
+    @include mq(tab) {
+        padding: 120px 0;
+    }
+    @include mq(sp) {
+        padding: 80px 0;
+    }
+}
+.p-contact-form__heading {
+    margin-bottom: 60px;
+    @include mq(tab) {
+        margin-bottom: 50px;
+    }
+}
+.p-contact-form__lead {
+    display: block;
+    letter-spacing: .06em;
+    margin-bottom: 50px;
+    @include font-size(18);
+    color: $font-color;
+    @include mq(tab) {
+        @include font-size(16);
+    }
+    @include mq(sp) {
+        margin-bottom: 40px;
+        @include font-size(12);
+    }
+}
+.p-contact-form__body {
+    padding: 50px 100px;
+    background-color: #F3F3F3;
+    @include mq(tab) {
+        padding: 50px 10%;
+    }
+    @include mq(sp) {
+        padding: 50px 20px;
+    }
+}
+.p-contact-form__label {
+    display: block;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.p-contact-form__name {
+    display: block;
+    margin-bottom: 5px;
+    letter-spacing: .06em;
+    @include font-size(16);
+    color: $font-color;
+    @include mq(sp) {
+        @include font-size(14);
+    }
+}
+.p-contact-form__text,
+.p-contact-form__textarea {
+    display: block;
+    background-color: #fff;
+    padding: 8px;
+    width: 100%;
+    letter-spacing: .06em;
+    @include font-size(16);
+    color: $font-color;
+    transition: all .3s;
+    @include mq(sp) {
+        @include font-size(14);
+    }
+    &:focus {
+        outline: none;
+        box-shadow: inset 0 0 4px rgb(202, 202, 202);
+    }
+}
+.p-contact-form__text {
+    height: 40px;
+    
+}
+.p-contact-form__textarea {
+    height: 200px;
+    @include mq(sp) {
+        height: 300px;
+    }
+}

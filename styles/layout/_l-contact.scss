@@ -1,0 +1,44 @@
+.l-contact {
+    padding: 150px 0;
+    text-align: center;
+    @include mq(tab) {
+        padding: 120px 0;
+    }
+    @include mq(sp) {
+        padding: 80px 0;
+    }
+}
+.l-contact--works {
+    padding: 100px 0;
+    text-align: center;
+    @include mq(tab) {
+        padding: 70px 0;
+    }
+    @include mq(sp) {
+        padding: 30px 0;
+    }
+}
+.l-contact__heading {
+    margin-bottom: 60px;
+    @include mq(tab) {
+        margin-bottom: 50px;
+    }
+    @include mq(sp) {
+        margin-bottom: 40px;
+    }
+}
+.l-contact__text {
+    display: block;
+    margin-bottom: 50px;
+    letter-spacing: .06em;
+    @include font-size(18);
+    color: $font-color;
+    @include mq(tab) {
+        margin-bottom: 40px;
+        @include font-size(16);
+    }
+    @include mq(sp) {
+        margin-bottom: 30px;
+        @include font-size(14);
+    }
+}

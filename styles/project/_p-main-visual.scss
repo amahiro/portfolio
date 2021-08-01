@@ -1,0 +1,82 @@
+.p-main-visual {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.p-main-visual__text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.p-main-visual__title {
+    background-image: url(../../images/background-star.jpg);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    white-space: nowrap;
+    letter-spacing: 0.06em;
+    font-weight: bold;
+    @include font-size(130);
+    color: transparent;
+    animation: myname-bg 90s ease-in-out infinite;
+    @include mq(tab) {
+        line-height: .9;
+        white-space: normal;
+        animation: myname-bg 80s ease-in-out infinite;
+    }
+    @include mq(sp) {
+        @include font-size(80);
+    }
+    @include mq(sp-sm) {
+        @include font-size(60);
+    }
+}
+.p-main-visual__lead {
+    display: block;
+    background-image: url(../../images/background-star.jpg);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    letter-spacing: 0.06em;
+    font-weight: bold;
+    @include font-size(40);
+    color: transparent;
+    animation: myname-bg 90s ease-in-out infinite;
+    @include mq(tab) {
+        margin-top: -10px;
+        animation: myname-bg 80s ease-in-out infinite;
+    }
+    @include mq(sp) {
+        @include font-size(30);
+    }
+    @include mq(sp-sm) {
+        margin-top: 0;
+        @include font-size(20);
+    }
+}
+.p-main-visual__scroll-down {
+    display: inline-block;
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 0;
+    left: 30px;
+    letter-spacing: .06em;
+    @include font-size(18);
+    color: $font-color;
+    writing-mode: vertical-lr;
+    @include mq(sp) {
+        left: 20px;
+        @include font-size(14);
+    }
+    &::after {
+        content: '';
+        animation: scroll-down 2s cubic-bezier(1, 0, 0, 1) infinite;
+        display: inline-block;
+        margin-top: 10px;
+        width: 1px;
+        height: 100px;
+        background-color: $font-color;
+    }
+}

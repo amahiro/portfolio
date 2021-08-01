@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/lkp4lwj.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+    <link rel="stylesheet" href="styles/pulgins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>HIROKI AMANO | portfolio-site</title>
+</head>
+<body class="js-body-fade is-body-fade is-body-fade--out">
+    <!-- l-header -->
+    <header class="l-header">
+        <h1 class="l-header__myname">
+            <a href="index.html">HIROKI AMANO</a>
+        </h1>
+        <button class="l-header__hamburger js-hamburger is-hamburger">
+            <span class="is-hamburger__bar"></span>
+            <span class="is-hamburger__bar"></span>
+            <span class="is-hamburger__bar"></span>
+            <span class="is-hamburger__text">menu</span>
+        </button>
+        <nav class="l-header__nav is-hamburger-nav">
+            <ul class="l-header__nav-list c-flex">
+                <li class="l-header__nav-item">
+                    <a href="index.html" class="l-header__nav-link">home</a>
+                </li>
+                <li class="l-header__nav-item">
+                    <a href="works.html" class="l-header__nav-link">works</a>
+                </li>
+                <li class="l-header__nav-item">
+                    <a href="about.html" class="l-header__nav-link">about</a>
+                </li>
+                <li class="l-header__nav-item">
+                    <a href="contact-form.html" class="l-header__nav-link">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- /l-header -->
+    <main class="l-main">
+        <section class="p-contact-form">
+            <h2 class="c-heading p-contact-form__heading" data-heading="お問い合わせ">contact</h2>
+            <div class="l-inner">
+                <span class="p-contact-form__lead">私に少しでも興味を持って頂けたら、ご連絡お待ち致しております。</span>
+                <form action="" method="POST" class="p-contact-form__body">
+                    <label for="name" class="p-contact-form__label">
+                        <span class="p-contact-form__name">お名前</span>
+                        <input type="text" name="name" id="name" class="p-contact-form__text">
+                    </label>
+                    <label for="email" class="p-contact-form__label">
+                        <span class="p-contact-form__name">メールアドレス</span>
+                        <input type="email" name="email" id="email" class="p-contact-form__text">
+                    </label>
+                    <label for="tel" class="p-contact-form__label">
+                        <span class="p-contact-form__name">電話番号</span>
+                        <input type="tel" name="tel" id="tel" class="p-contact-form__text">
+                    </label>
+                    <label for="textarea" class="p-contact-form__label">
+                        <span class="p-contact-form__name">お問い合わせ内容</span>
+                        <textarea name="textarea" id="textarea" class="p-contact-form__textarea"></textarea>
+                    </label>
+                    <div class="c-btn c-btn--submit">
+                        <input type="submit" value="送信する">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- l-footer -->
+    <footer class="l-footer">
+        <div class="l-inner">
+            <p class="l-footer__myname">
+                HIROKI<span class="l-footer__surname">AMANO</span>
+            </p>
+            <ul class="l-footer__nav-list c-flex">
+                <li class="l-footer__nav-item">
+                    <a href="index.html" class="l-footer__nav-link">home</a>
+                </li>
+                <li class="l-footer__nav-item">
+                    <a href="works.html" class="l-footer__nav-link">works</a>
+                </li>
+                <li class="l-footer__nav-item">
+                    <a href="about.html" class="l-footer__nav-link">about</a>
+                </li>
+                <li class="l-footer__nav-item">
+                    <a href="contact-form.html" class="l-footer__nav-link">contact</a>
+                </li>
+            </ul>
+            <small class="l-footer__copyright">&copy; 2021 HIROKI AMANO</small>
+        </div>
+    </footer>
+    <!-- /l-footer -->
+    <!-- fixed -->
+    <button class="js-page-top-trigger is-page-top">
+        <i class="fas fa-angle-up"></i>
+    </button>
+    <!-- /fixed -->
+    <!-- script -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="https://kit.fontawesome.com/0b4016e942.js" crossorigin="anonymous"></script>
+    <script src="scripts/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/swiper/swiper.js"></script>
+    <script src="/scripts/hamburger.js"></script>
+    <script src="/scripts/main.js"></script>
+</body>
+</html>

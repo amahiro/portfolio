@@ -1,0 +1,24 @@
+.is-body-fade {
+    &::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        pointer-events: none;
+        opacity: 0;
+        z-index: $z-index-order-2;
+        transition: all .6s ease;
+    }
+    &--out {
+        &::after {
+            opacity: 1;
+        }
+        .l-main {
+            transition: all .6s;
+            transform: translateY(-20px);
+        }
+    }
+}

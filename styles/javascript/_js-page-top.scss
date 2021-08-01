@@ -1,0 +1,35 @@
+.is-page-top {
+    visibility: hidden;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    transform: translateY(300px);
+    border-radius: 30px;
+    background-color: $accent-color;
+    width: 60px;
+    height: 60px;
+    z-index: $z-index-order-3;
+    transition: all.6s;
+    @include mq(sp) {
+        bottom: 30px;
+        right: 30px;
+    }
+    &:hover {
+        > i {
+            top: 40%;
+        }
+    }
+    > i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        @include font-size(30);
+        color: #fff;
+        transition: all .3s;
+    }
+}
+.is-page-top--done {
+	visibility: visible;
+	transform: translateY(0);
+}

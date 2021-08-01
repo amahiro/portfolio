@@ -1,0 +1,47 @@
+.c-heading {
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: .06em;
+    font-weight: bold;
+    @include font-size(80);
+    color: $font-color;
+    @include mq(tab) {
+        @include font-size(60);
+    }
+    @include mq(sp) {
+        @include font-size(40);
+    }
+    &::before {
+        white-space: nowrap;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: attr(data-heading);
+        font-weight: bold;
+        @include font-size(20);
+        color: $accent-color;
+        @include mq(tab) {
+            @include font-size(16);
+        }
+        @include mq(sp) {
+            top: -20px;
+            @include font-size(14);
+        }
+    }
+    &::after {
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: '';
+        background-color: $accent-color;
+        width: 60px;
+        height: 4px;
+        @include mq(sp) {
+            bottom: -10px;
+            width: 50px;
+        }
+    }
+}

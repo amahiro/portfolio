@@ -1,0 +1,87 @@
+.p-career {
+    text-align: center;
+}
+.p-career__heading {
+    margin-bottom: 60px;
+    @include mq(tab) {
+        margin-bottom: 50px;
+    }
+}
+.p-career__item {
+    &:first-child {
+        > .p-career__time {
+            margin-top: -50px;
+            @include mq(tab) {
+                margin-top: -30px;
+            }
+            @include mq(sp) {
+                margin-top: 0;
+            }
+        }
+        > .p-career__content {
+            padding-top: 0;
+        }
+    }
+    @include mq(sp) {
+        padding: 0 0 50px 20px;
+        border-left: 1px solid #D2D2D2;
+    }
+    &.c-flex {
+        justify-content: flex-start;
+        @include mq(sp) {
+            flex-direction: column;
+        }
+    }
+}
+.p-career__time {
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: .06em;
+    width: 20%;
+    @include font-size(16);
+    color: $font-color;
+    @include mq(tab) {
+        @include font-size(14);
+    }
+    @include mq(sp) {
+        margin-bottom: 5px;
+        text-align: left;
+        width: 100%;
+    }
+}
+.p-career__content {
+    text-align: left;
+    padding: 50px 20px;
+    width: 80%;
+    border-left: 1px solid #D2D2D2;
+    @include mq(tab) {
+        padding: 30px 20px;
+    }
+    @include mq(sp) {
+        padding: 0;
+        width: 100%;
+        border-left: none;
+
+    }
+}
+.p-career__title {
+    margin-bottom: 5px;
+    letter-spacing: .06em;
+    @include font-size(20);
+    color: $accent-color;
+    @include mq(tab) {
+        @include font-size(18);
+    }
+    @include mq(sp) {
+        @include font-size(16);
+    }
+}
+.p-career__text {
+    letter-spacing: .06em;
+    line-height: 1.6;
+    @include font-size(16);
+    color: $font-color;
+    @include mq(tab) {
+        @include font-size(14);
+    }
+}

@@ -1,0 +1,9 @@
+.u-lower-padding {
+    padding: 150px 0 0 !important;
+    @include mq(tab) {
+        padding: 120px 0 0 !important;
+    }
+    @include mq(sp) {
+        padding: 80px 0 0 !important;
+    }
+}

@@ -1,0 +1,131 @@
+.p-works-detail {
+    background-color: #F3F3F3;
+    padding: 150px 0;
+    text-align: center;
+    @include mq(tab) {
+        padding: 120px 0;
+    }
+    @include mq(sp) {
+        padding: 80px 0;
+    }
+}
+.p-works-detail__heading {
+    margin-bottom: 60px;
+    @include mq(tab) {
+        margin-bottom: 50px;
+    }
+}
+.p-works-detail__mock-up {
+    margin-bottom: 30px;
+}
+.p-works-detail__btn {
+    margin-bottom: 60px;
+    @include mq(tab) {
+        margin-bottom: 50px;
+    }
+}
+.p-works-detail__sub-heading {
+    margin-bottom: 30px;
+    letter-spacing: .06em;
+    font-weight: bold;
+    color: $font-color;
+    @include font-size(26);
+    @include mq(sp) {
+        @include font-size(20);
+    }
+    &::after {
+        content: '';
+        margin-left: 20px;
+        flex: 1;
+        background-color: $accent-color;
+        height: 4px;
+        @include mq(sp) {
+            height: 2px;
+        }
+    }
+    &.c-flex {
+        justify-content: flex-start;
+    }
+}
+.p-works-detail__first {
+    &.c-flex {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        @include mq(sp) {
+            align-items: flex-start;
+        }
+    }
+}
+.p-works-detail__first-item {
+    margin-right: 20px;
+    text-align: left;
+    @include mq(sp) {
+        margin-right: 0;
+        width: 50%;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.p-works-detail__item {
+    text-align: left;
+    margin-bottom: 70px;
+    @include mq(sp) {
+        margin-bottom: 50px;
+    }
+    &:last-child {
+        margin-bottom: 50px;
+    }
+}
+.p-works-detail__title {
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    font-weight: bold;
+    @include font-size(14);
+    color: $font-color;
+}
+.p-works-detail__text {
+    margin-bottom: 20px;
+    letter-spacing: .06em;
+    line-height: 1.6;
+    @include font-size(14);
+    color: $font-color;
+}
+.p-works-detail__url {
+    display: block;
+    margin-bottom: 70px;
+    text-align: left;
+    @include font-size(14);
+    color: $accent-color;
+    @include mq(sp) {
+        margin-bottom: 50px;
+    }
+}
+.p-works-detail__image {
+    &.c-flex {
+        align-items: flex-start;
+        @include mq(sp) {
+            flex-direction: column;
+        }
+    }
+}
+.p-works-detail__pc {
+    width: 70%;
+    @include mq(tab) {
+        margin-right: 30px;
+    }
+    @include mq(sp) {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+.p-works-detail__sp {
+    width: 24%;
+    @include mq(tab) {
+        width: 30%;
+    }
+    @include mq(sp) {
+        width: 100%;
+    }
+}
