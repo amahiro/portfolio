@@ -1026,6 +1026,7 @@ javascript
   .is-hamburger {
     display: block;
     z-index: 1000;
+    position: fixed;
   }
   .is-hamburger::after {
     content: '';
